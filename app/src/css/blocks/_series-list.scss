@@ -1,0 +1,77 @@
+.series-list__items {
+  margin: auto;
+  width: 100%;
+}
+
+.series-list__items-inner {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding: 0 $movie-list-item-padding-x 10px $movie-list-item-padding-x;
+  margin-top: $movie-list-margin-top;
+}
+
+.series-list__item {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  width: $series-list-item-width;
+  @include border-radius($poster-border-radius);
+  margin-left: $movie-list-item-space;
+  @include box-shadow($poster-box-shadow);
+
+  .css-truncate.css-truncate-target, .css-truncate .css-truncate-target{
+    max-width: $series-list-item-width - 30;
+  }
+}
+
+.series-list__item:first-child {
+  margin-left: 0;
+}
+
+.series-list__item a {
+  display: block;
+  height: 150px;
+
+  p{
+    text-align: center;
+    padding-top: 8px;
+  }
+
+  span {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  img {
+    display: inline-block;
+    position: absolute;
+    top: 80px;
+    z-index: 2;
+    width: 80px !important;
+    @include border-radius($poster-border-radius);
+    outline: 1px solid transparent;
+  }
+}
+.series-list__item-title {
+  top: 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+.series-list__item-poster-left {
+  left: 15px;
+}
+
+.series-list__item .series-list__item-poster-middle {
+  z-index: 3;
+  width: 90px !important;
+  left: 55px;
+  top: 40px;
+  @include box-shadow($series-poster-box-shadow);
+}
+
+.series-list__item-poster-right {
+  right: 15px;
+}

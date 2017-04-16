@@ -1,0 +1,49 @@
+.movie-list__items{
+  margin: auto;
+  width: 100%;
+}
+
+.movie-list__items-inner{
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding: 0 $movie-list-item-padding-x;
+  margin-top: $movie-list-margin-top;
+}
+
+.movie-list__item {
+  display:inline-block;
+  position: relative;
+  width: $movie-list-item-width;
+  margin-left: $movie-list-item-space;
+
+  img {
+    @include border-radius($poster-border-radius);
+    @include box-shadow($poster-box-shadow);
+    z-index: 1;
+  }
+
+  .css-truncate.css-truncate-target, .css-truncate .css-truncate-target {
+    max-width: $movie-list-item-width - 10;
+  }
+}
+
+.movie-list__item:first-child{
+  margin-left: 0;
+}
+
+.movie-list__item-desc {
+  text-align: center;
+  margin-top: 5px;
+
+  span {
+    font-size: 13px;
+    display: block;
+  }
+
+  i {
+    font-size: 12px;
+    color: #cccccc;
+    font-style: normal;
+  }
+}

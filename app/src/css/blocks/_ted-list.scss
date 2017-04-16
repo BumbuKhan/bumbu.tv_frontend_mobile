@@ -1,0 +1,39 @@
+.ted-list__items{
+  margin: auto;
+  width: 100%;
+}
+
+.ted-list__items-inner{
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  padding: 0 $movie-list-item-padding-x;
+  margin-top: $movie-list-margin-top;
+}
+
+.ted-list__item {
+  display:inline-block;
+  position: relative;
+  width: $ted-list-item-width;
+  margin-left: $movie-list-item-space;
+
+  a {
+    color: #333333;
+    text-decoration: none;
+
+    img {
+      @include border-radius($poster-border-radius);
+      position: relative;
+      z-index: 1;
+    }
+  }
+}
+
+.ted-list__item:first-child{
+  margin-left: 0;
+}
+
+.ted-list .movie-list-header h3 a{
+  font-weight: normal;
+  font-size: 12px;
+}

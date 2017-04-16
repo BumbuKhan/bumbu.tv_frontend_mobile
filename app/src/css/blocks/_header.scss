@@ -1,0 +1,15 @@
+@import "../variables";
+
+.header__logo a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+// dark theme
+.header_theme_dark {
+  background-color: $header-dark-theme-bg-color;
+}
+
+.header_theme_dark .header__logo a {
+  color: #e0e0e0;
+}
