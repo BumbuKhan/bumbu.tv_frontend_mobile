@@ -17,12 +17,12 @@
   overflow: hidden;
   width: $series-list-item-width;
   @include border-radius($poster-border-radius);
-  margin-left: $movie-list-item-space;
+  //margin-left: $movie-list-item-space;
   @include box-shadow($poster-box-shadow);
 
-  .css-truncate.css-truncate-target, .css-truncate .css-truncate-target{
+  /*.css-truncate.css-truncate-target, .css-truncate .css-truncate-target{
     max-width: $series-list-item-width - 30;
-  }
+  }*/
 }
 
 .series-list__item:first-child {

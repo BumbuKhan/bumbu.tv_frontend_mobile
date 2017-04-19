@@ -4,18 +4,20 @@
 }
 
 .movie-list__items-inner{
-  overflow-x: scroll;
+  /*overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
-  padding: 0 $movie-list-item-padding-x;
+  padding: 0 $movie-list-item-padding-x;*/
   margin-top: $movie-list-margin-top;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
 .movie-list__item {
   display:inline-block;
   position: relative;
-  width: $movie-list-item-width;
-  margin-left: $movie-list-item-space;
+  /*width: $movie-list-item-width;
+  margin-left: $movie-list-item-space;*/
 
   img {
     @include border-radius($poster-border-radius);
@@ -23,14 +25,19 @@
     z-index: 1;
   }
 
-  .css-truncate.css-truncate-target, .css-truncate .css-truncate-target {
+  /*.css-truncate.css-truncate-target, .css-truncate .css-truncate-target {
     max-width: $movie-list-item-width - 10;
+  }*/
+
+  .item{
+    background-color: coral;
+    min-height: 150px;
   }
 }
 
-.movie-list__item:first-child{
+/*.movie-list__item:first-child{
   margin-left: 0;
-}
+}*/
 
 .movie-list__item-desc {
   text-align: center;

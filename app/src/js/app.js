@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $(function () {
-        $('nav#hamburger-menu').mmenu();
-    });
+
+    // hamburger menu init
+    $('nav#hamburger-menu').mmenu();
 });
