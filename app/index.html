@@ -9,12 +9,13 @@
 
     <link type="text/css" rel="stylesheet" href="dist/css/font-awesome.min.css"/>
     <link type="text/css" rel="stylesheet" href="dist/css/primer.css"/>
-    <link rel="stylesheet" href="src/css/jquery.mmenu.all.css">
-    <link rel="stylesheet" href="src/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="src/css/owl.theme.default.min.css">
+    <link type="text/css" rel="stylesheet" href="dist/css/jquery.mmenu.all.css">
+    <link type="text/css" rel="stylesheet" href="dist/css/owl.carousel.min.css">
+    <link type="text/css" rel="stylesheet" href="dist/css/owl.theme.default.min.css">
     <link type="text/css" rel="stylesheet" href="dist/css/app.min.css"/>
+
 </head>
-<body>
+<body onload='initScrollers()'>
 
 <div id="wrapper">
     <!--hamburger-menu start-->
@@ -74,7 +75,7 @@
     </header>
     <!--header   end-->
 
-    <!--moovie-list start-->
+    <!--movies start-->
     <section class="movie-list">
         <!--movie-list-header start-->
         <div class="movie-list-header">
@@ -96,11 +97,47 @@
         <!--movie-list-header   end-->
 
         <!--movie-list__items start-->
-        <div class="movie-list__items">
-            <div class="movie-list__items-inner">
-
-                <div class="owl-carousel owl-carousel-movies">
-                    <div class="item">
+        <div class='horizontal-scroller movie-list__horizontal-scroller js-movie-list__horizontal-scroller'>
+            <div class='scroller movie-list__scoller'>
+                <ul class="clearfix">
+                    <li>
+                        <!--movie-list__item start-->
+                        <div class="movie-list__item">
+                            <a href="#">
+                                <img src="dist/img/1.jpg" class="img-responsive" alt="">
+                            </a>
+                            <div class="movie-list__item-desc">
+                                <span class="branch-ref css-truncate css-truncate-target"
+                                      title="Обитель зла 6: Последняя глава (2017)">Обитель зла 6 lorem ipsum dolor</span>
+                            </div>
+                        </div>
+                        <!--movie-list__item   end-->
+                    </li>
+                    <li>
+                        <!--movie-list__item start-->
+                        <div class="movie-list__item">
+                            <a href="#">
+                                <img src="dist/img/3.jpg" class="img-responsive" alt="">
+                            </a>
+                            <div class="movie-list__item-desc">
+                                <span class="branch-ref css-truncate css-truncate-target">Прибытие</span>
+                            </div>
+                        </div>
+                        <!--movie-list__item   end-->
+                    </li>
+                    <li>
+                        <!--movie-list__item start-->
+                        <div class="movie-list__item">
+                            <a href="#">
+                                <img src="dist/img/2.jpg" class="img-responsive" alt="">
+                            </a>
+                            <div class="movie-list__item-desc">
+                                <span class="branch-ref css-truncate css-truncate-target">Крест</span>
+                            </div>
+                        </div>
+                        <!--movie-list__item   end-->
+                    </li>
+                    <li>
                         <!--movie-list__item start-->
                         <div class="movie-list__item">
                             <a href="#">
@@ -112,53 +149,30 @@
                             </div>
                         </div>
                         <!--movie-list__item   end-->
-                    </div>
-                    <div class="item">
+                    </li>
+                    <li>
                         <!--movie-list__item start-->
                         <div class="movie-list__item">
                             <a href="#">
-                                <img src="dist/img/5.jpg" class="img-responsive" alt="">
+                                <img src="dist/img/1.jpg" class="img-responsive" alt="">
                             </a>
                             <div class="movie-list__item-desc">
-                                <span class="branch-ref css-truncate css-truncate-target">Доктор Стрэндж (2016)</span>
+                            <span class="branch-ref css-truncate css-truncate-target"
+                                  title="Обитель зла 6: Последняя глава (2017)">Обитель зла 6</span>
                             </div>
                         </div>
                         <!--movie-list__item   end-->
-                    </div>
-                    <div class="item">
-                        <!--movie-list__item start-->
-                        <div class="movie-list__item">
-                            <a href="#">
-                                <img src="dist/img/3.jpg" class="img-responsive" alt="">
-                            </a>
-                            <div class="movie-list__item-desc">
-                                <span class="branch-ref css-truncate css-truncate-target">Прибытие</span>
-                            </div>
-                        </div>
-                        <!--movie-list__item   end-->
-                    </div>
-                    <div class="item">
-                        <!--movie-list__item start-->
-                        <div class="movie-list__item">
-                            <a href="#">
-                                <img src="dist/img/2.jpg" class="img-responsive" alt="">
-                            </a>
-                            <div class="movie-list__item-desc">
-                                <span class="branch-ref css-truncate css-truncate-target">Крест</span>
-                            </div>
-                        </div>
-                        <!--movie-list__item   end-->
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
         </div>
         <!--movie-list__items   end-->
     </section>
-    <!--moovie-list   end-->
+    <!--movies   end-->
 
-    <!--series-list start-->
+    <!--series start-->
     <section class="series-list">
-        <!--movie-list-header start-->
+        <!--series-list-header start-->
         <div class="movie-list-header">
             <div class="container">
                 <div class="columns">
@@ -175,15 +189,13 @@
                 </div>
             </div>
         </div>
-        <!--movie-list-header   end-->
+        <!--series-list-header   end-->
 
         <!--series-list__items start-->
-        <div class="series-list__items">
-            <div class="series-list__items-inner">
-
-                <div class="owl-carousel owl-carousel-series">
-                    <div class="item">
-                        <!--series-list__item start-->
+        <div class='horizontal-scroller series-list__horizontal-scroller js-series-list__horizontal-scroller'>
+            <div class='scroller series-list__scoller'>
+                <ul class="clearfix">
+                    <li>
                         <div class="series-list__item"
                              style="background: linear-gradient(to bottom, #4F5B67, #A0A9B0);">
                             <a href="#">
@@ -196,10 +208,8 @@
                                 <img class="series-list__item-poster-right" src="dist/img/1-right.jpg" alt="">
                             </a>
                         </div>
-                        <!--series-list__item   end-->
-                    </div>
-                    <div class="item">
-                        <!--series-list__item start-->
+                    </li>
+                    <li>
                         <div class="series-list__item"
                              style="background: linear-gradient(to bottom, #0F1010, #6F7373);">
                             <a href="#">
@@ -212,10 +222,8 @@
                                 <img class="series-list__item-poster-right" src="dist/img/2-right.jpg" alt="">
                             </a>
                         </div>
-                        <!--series-list__item   end-->
-                    </div>
-                    <div class="item">
-                        <!--series-list__item start-->
+                    </li>
+                    <li>
                         <div class="series-list__item"
                              style="background: linear-gradient(to bottom, #938D6D, #E4DCD2);">
                             <a href="#">
@@ -228,17 +236,15 @@
                                 <img class="series-list__item-poster-right" src="dist/img/3-right.jpg" alt="">
                             </a>
                         </div>
-                        <!--series-list__item   end-->
-                    </div>
-                </div>
-
+                    </li>
+                </ul>
             </div>
         </div>
         <!--series-list__items   end-->
     </section>
-    <!--series-list   end-->
+    <!--series   end-->
 
-    <!--moovie-list (cartoons actually) start-->
+    <!--cartoons start-->
     <section class="movie-list">
         <!--movie-list-header start-->
         <div class="movie-list-header">
@@ -260,24 +266,22 @@
         <!--movie-list-header   end-->
 
         <!--movie-list__items start-->
-        <div class="movie-list__items">
-            <div class="movie-list__items-inner">
-
-                <div class="owl-carousel owl-carousel-movies">
-                    <div class="item">
+        <div class='horizontal-scroller movie-list__horizontal-scroller js-cartoons-list__horizontal-scroller'>
+            <div class='scroller movie-list__scoller'>
+                <ul class="clearfix">
+                    <li>
                         <!--movie-list__item start-->
                         <div class="movie-list__item">
                             <a href="#">
                                 <img src="dist/img/6.jpg" class="img-responsive" alt="">
                             </a>
                             <div class="movie-list__item-desc">
-                            <span class="branch-ref css-truncate css-truncate-target"
-                                  title="Обитель зла 6: Последняя глава (2017)">Моана (2016)</span>
+                                <span class="branch-ref css-truncate css-truncate-target">Моана (2016)</span>
                             </div>
                         </div>
                         <!--movie-list__item   end-->
-                    </div>
-                    <div class="item">
+                    </li>
+                    <li>
                         <!--movie-list__item start-->
                         <div class="movie-list__item">
                             <a href="#">
@@ -288,8 +292,8 @@
                             </div>
                         </div>
                         <!--movie-list__item   end-->
-                    </div>
-                    <div class="item">
+                    </li>
+                    <li>
                         <!--movie-list__item start-->
                         <div class="movie-list__item">
                             <a href="#">
@@ -300,8 +304,20 @@
                             </div>
                         </div>
                         <!--movie-list__item   end-->
-                    </div>
-                    <div class="item">
+                    </li>
+                    <li>
+                        <!--movie-list__item start-->
+                        <div class="movie-list__item">
+                            <a href="#">
+                                <img src="dist/img/10.jpg" class="img-responsive" alt="">
+                            </a>
+                            <div class="movie-list__item-desc">
+                                <span class="branch-ref css-truncate css-truncate-target">Тайная жизнь домашних животных (2016)</span>
+                            </div>
+                        </div>
+                        <!--movie-list__item   end-->
+                    </li>
+                    <li>
                         <!--movie-list__item start-->
                         <div class="movie-list__item">
                             <a href="#">
@@ -312,15 +328,15 @@
                             </div>
                         </div>
                         <!--movie-list__item   end-->
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
         </div>
         <!--movie-list__items   end-->
     </section>
-    <!--moovie-list (cartoons actually)   end-->
+    <!--cartoons   end-->
 
-    <!--ted-list start-->
+    <!--TED start-->
     <section class="ted-list">
         <!--movie-list-header start-->
         <div class="movie-list-header">
@@ -342,51 +358,58 @@
         <!--movie-list-header   end-->
 
         <!--ted-list__items start-->
-        <div class="ted-list__items">
-            <div class="ted-list__items-inner">
-
-                <div class="owl-carousel owl-carousel-ted">
-                    <div class="item">
+        <div class='horizontal-scroller ted-list__horizontal-scroller js-ted-list__horizontal-scroller'>
+            <div class='scroller ted-list__scoller'>
+                <ul class="clearfix">
+                    <li>
                         <!--ted-list__item start-->
-                        <div class="ted-list__item outlined">
+                        <div class="ted-list__item">
                             <a href="#">
                                 <img src="dist/img/ted-1.jpg" class="img-responsive" alt="">
                             </a>
+                            <div class="ted-list__item-desc">
+                                <span class="branch-ref css-truncate css-truncate-target">What time is it on Mars?</span>
+                            </div>
                         </div>
                         <!--ted-list__item   end-->
-                    </div>
-                    <div class="item">
+                    </li>
+                    <li>
                         <!--ted-list__item start-->
                         <div class="ted-list__item">
                             <a href="#">
                                 <img src="dist/img/ted-2.jpg" class="img-responsive" alt="">
                             </a>
+                            <div class="ted-list__item-desc">
+                                <span class="branch-ref css-truncate css-truncate-target">The good news of the decade? We're winning the war against child mortality</span>
+                            </div>
                         </div>
-                        <!--ted-list__item end-->
-                    </div>
-                    <div class="item">
+                        <!--ted-list__item   end-->
+                    </li>
+                    <li>
                         <!--ted-list__item start-->
                         <div class="ted-list__item">
                             <a href="#">
                                 <img src="dist/img/ted-3.jpg" class="img-responsive" alt="">
                             </a>
+                            <div class="ted-list__item-desc">
+                                <span class="branch-ref css-truncate css-truncate-target">Playlist: Statistically speaking a man who loved the world</span>
+                            </div>
                         </div>
                         <!--ted-list__item   end-->
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
         </div>
         <!--ted-list__items   end-->
     </section>
-    <!--ted-list   end-->
-
-    <br/>
-    <br/>
+    <!--TED   end-->
 </div>
 
 <script type="text/javascript" src="dist/js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="dist/js/jquery.mmenu.all.min.js"></script>
 <script type="text/javascript" src="dist/js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="dist/js/iscroll-5.2.0.js"></script>
 <script type="text/javascript" src="dist/js/app.js"></script>
+
 </body>
 </html>

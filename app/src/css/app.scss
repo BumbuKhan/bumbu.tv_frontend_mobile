@@ -2,26 +2,24 @@
 @import "mixins/_border_radius";
 @import "mixins/box_shadow";
 @import "blocks/header";
+@import "blocks/horisontal-scroller";
 @import "blocks/movie-list-header";
-@import "blocks/movie-list";
-@import "blocks/series-list";
-@import "blocks/ted-list";
+@import "blocks/_movie-list";
+@import "blocks/_series-list";
+@import "blocks/_ted-list";
 //@import "blocks/_movie-details";
 //@import "blocks/_series-details";
 @import "blocks/footer";
 
 .outlined {
-  outline: 1px #ccc dotted;
+  outline: 1px #333 dotted;
 }
 
 .img-responsive {
   display: block;
   max-width: 100%;
+  height: auto
 }
-
-/*#wrapper {
-  min-width: 1020px;
-}*/
 
 // blocks: common styles start
 .movie-list, .series-list, .ted-list, .movie-details, .video-player, .series-details {

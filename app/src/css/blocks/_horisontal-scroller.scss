@@ -1,0 +1,48 @@
+.horizontal-scroller {
+  position: relative;
+  z-index: 1;
+  //height: $movies-item-height; // this property should be defined for each block (BEM) separately
+  @if $movie-list-item-x-axis-gutter / 2 < $list-x-axis-gutter {
+    $additional-padding: $list-x-axis-gutter - $movie-list-item-x-axis-gutter / 2;
+    padding-left: $additional-padding;
+  }
+  width: 100%;
+  overflow: hidden;
+  -ms-touch-action: none;
+}
+
+.scroller {
+  position: absolute;
+  z-index: 1;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  //width: ($movies-item-amount * $movies-item-width) + (2 * ($list-x-axis-gutter - $movie-list-item-x-axis-gutter / 2)); // this property should be defined for each block (BEM) separately
+  //height: $movies-item-height; // this property should be defined for each block (BEM) separately
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+}
+
+.scroller ul {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.scroller li {
+  //width: $movies-item-width; // this property should be defined for each block (BEM) separately
+  //height: $movies-item-height; // this property should be defined for each block (BEM) separately
+  float: left;
+  overflow: hidden;
+  padding: $movie-list-item-y-axis-gutter $movie-list-item-x-axis-gutter / 2;
+}

@@ -74,22 +74,22 @@
   overflow-y: hidden;
   background-color: rgba(0, 0, 0, .4);
 
-  &.scrollable.default-skin{
+  &.scrollable.default-skin {
     padding-bottom: 0;
     padding-right: 0;
   }
 
-  &.scrollable .viewport .overview{
+  &.scrollable .viewport .overview {
     width: 100%;
   }
 
-  .scroll-bar.vertical{
+  .scroll-bar.vertical {
     z-index: 10 !important;
     right: 2px !important;
   }
 }
 
-.series-details__episodes{
+.series-details__episodes {
   max-width: 283px;
   background-color: rgba(0, 0, 0, .6);
 }
@@ -109,7 +109,7 @@
   }
 }
 
-.series-details__episodes-list li{
+.series-details__episodes-list li {
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -146,6 +146,6 @@
   }
 }
 
-.video-player__title{
+.video-player__title {
   margin-bottom: 10px;
 }
