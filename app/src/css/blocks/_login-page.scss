@@ -2,7 +2,7 @@
   min-height: 300px;
 }
 
-.login-form input[type=email], .login-form input[type=password]{
+.login-form input[type=email], .login-form input[type=password], .login-form input[type=text]{
   outline: none;
   box-shadow: none;
   line-height: 28px;
@@ -16,7 +16,7 @@
   }
 }
 
-.login-form__login-field {
+.login-form__login-field, .signup-form__name-field {
   border-bottom: none;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
@@ -53,4 +53,9 @@ a.btn-connect-option {
     background-color: #dc4d28;
     background-position: 0 -37px;
   }
+}
+
+.signup-form__login-field{
+  border-radius: 0;
+  border-bottom: none;
 }
