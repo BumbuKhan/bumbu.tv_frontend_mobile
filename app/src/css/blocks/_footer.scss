@@ -1,18 +1,16 @@
-.footer {
-  padding-top: 20px;
-  padding-bottom: 20px;
+.footer-block {
+  font-size: 13px;
+  background-color: #F3F3F3;
+  padding: 10px 20px;
 }
 
-.footer__items {
-  list-style-type: none;
+.footer-block__table {
+  width: 100%;
 
-  li {
-    display: inline-block;
-    margin-left: 10px;
-    font-size: 13px;
-  }
-
-  li:first-child {
-    margin-left: 0;
+  tr td{
+    padding: 3px 0;
+    &:last-child {
+      text-align: right;
+    }
   }
 }
