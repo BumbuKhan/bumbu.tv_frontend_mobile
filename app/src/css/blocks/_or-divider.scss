@@ -1,0 +1,22 @@
+.or-divider {
+  text-align: center;
+  position: relative;
+  line-height: 20px;
+
+  &:before {
+    content: '';
+    display: block;
+    height: 1px;
+    border-top: 1px #cccccc solid;
+    position: relative;
+    top: 12px;
+  }
+
+  span {
+    line-height: 0;
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+    top: -1px;
+  }
+}

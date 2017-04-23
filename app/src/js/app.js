@@ -1,11 +1,7 @@
 $(document).ready(function () {
 
     // hamburger menu init
-    $('#hamburger-menu').mmenu({
-        'extensions': {
-            'all': ['theme-dark']
-        }
-    });
+    $('#hamburger-menu').mmenu();
 
     // search-window
     $('#search-window').mmenu({

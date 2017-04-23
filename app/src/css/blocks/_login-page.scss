@@ -1,0 +1,56 @@
+.login-page-wr {
+  min-height: 300px;
+}
+
+.login-form input[type=email], .login-form input[type=password]{
+  outline: none;
+  box-shadow: none;
+  line-height: 28px;
+  background-color: $color-light-grey;
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #dddddd;
+    background-color: #ffffff;
+  }
+}
+
+.login-form__login-field {
+  border-bottom: none;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.login-form__password-field {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.or-divider-login-page span{
+  background-color: #ffffff;
+}
+
+a.btn-connect-option {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  width: 100%;
+  line-height: 23px;
+  text-align: center;
+  padding: 10px 10px 10px 50px;
+  border-radius: 3px;
+  text-decoration: none;
+  background-image: url('../img/btn-connect-option.png');
+  background-repeat: no-repeat;
+
+  &.facebook {
+    background-color: #3b5998;
+  }
+
+  &.google-plus {
+    background-color: #dc4d28;
+    background-position: 0 -37px;
+  }
+}
