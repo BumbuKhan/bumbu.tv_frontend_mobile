@@ -11,13 +11,18 @@
 //@import "blocks/_series-details";
 @import "blocks/_footer-block";
 @import "blocks/_search-window";
-
 @import "blocks/_login-page";
 @import "blocks/_or-divider";
 
 .outlined {
   outline: 1px #333 dotted;
 }
+
+@font-face {
+  font-family: Vacaciones;
+  src: url(../fonts/Vacaciones-font-ffp-defharo.ttf);
+}
+
 
 .img-responsive {
   display: block;

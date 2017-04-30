@@ -36,3 +36,19 @@
     height: $movies-item-height;
   }
 }
+
+.movie__list-view-item {
+
+  img {
+    @include box-shadow($poster-box-shadow);
+    @include border-radius($poster-border-radius);
+  }
+}
+
+.movie-details__genres{
+  white-space: normal;
+}
+
+.movie__list-view-item-title{
+  white-space: normal;
+}
