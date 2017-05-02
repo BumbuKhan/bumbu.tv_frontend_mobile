@@ -15,7 +15,7 @@
     <link type="text/css" rel="stylesheet" href="dist/css/app.min.css"/>
 
 </head>
-<body>
+<body onload='initSeasonsScrollers()'>
 
 <div id="wrapper">
     <!--header start-->
@@ -71,7 +71,7 @@
                         </div>
                         <div class="column pl-0" style="width: 55%">
                             <div class="movie-details__title-n-duration">
-                                <h3>Mr Robot</h3>
+                                <h2>Mr Robot</h2>
                                 <p class="movie-details__duration">4 season(s)</p>
                                 <p class="movie-details__genres">
                                     <span>Ужасы</span>
@@ -86,19 +86,116 @@
             </div>
         </div>
 
+
         <!--seasons-list start-->
-        <div class="outlined mt-6 seasons-list">
+        <div class="mt-5 seasons">
             <div class="container">
                 <div class="columns">
-                    <div class="single-column outlined">
-                        sdasd
+                    <div class="single-column clearfix">
+                        <hr>
+                        <h3 class="pull-left">Season 1</h3>
+                        <a href="#" class="pull-right text-bold">
+                            <small>More seasons</small>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="seasons__list mt-2">
+                <div class='horizontal-scroller seasons__horizontal-scroller js-seasons__horizontal-scroller'>
+                    <div class='scroller seasons__scoller'>
+                        <ul class="clearfix">
+                            <li>
+                                <div class="seasons__list-col">
+                                    <ul class="clearfix">
+                                        <li class="seasons__list-item">
+                                            <a href="#" class="clearfix">
+                                                <img src="dist/img/mr-robot-1.jpg" alt="">
+                                                <span class="seasons__list-item-title">Episode 1</span><br>
+                                                <span class="seasons__list-item-desc">59 min</span>
+                                            </a>
+                                        </li>
+                                        <li class="seasons__list-item">
+                                            <a href="#" class="clearfix">
+                                                <img src="dist/img/mr-robot-2.jpg" alt="">
+                                                <span class="seasons__list-item-title">Episode 2</span><br>
+                                                <span class="seasons__list-item-desc">59 min</span>
+                                            </a>
+                                        </li>
+                                        <li class="seasons__list-item">
+                                            <a href="#" class="clearfix">
+                                                <img src="dist/img/mr-robot-3.jpg" alt="">
+                                                <span class="seasons__list-item-title">Episode 3</span><br>
+                                                <span class="seasons__list-item-desc">59 min</span>
+                                            </a>
+                                        </li>
+                                        <li class="seasons__list-item">
+                                            <a href="#" class="clearfix">
+                                                <img src="dist/img/mr-robot-4.jpg" alt="">
+                                                <span class="seasons__list-item-title">Episode 4</span><br>
+                                                <span class="seasons__list-item-desc">59 min</span>
+                                            </a>
+                                        </li>
+                                        <li class="seasons__list-item">
+                                            <a href="#" class="clearfix">
+                                                <img src="dist/img/mr-robot-5.jpg" alt="">
+                                                <span class="seasons__list-item-title">Episode 5</span><br>
+                                                <span class="seasons__list-item-desc">59 min</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="seasons__list-col">
+                                    <ul class="clearfix">
+                                        <li class="seasons__list-item">
+                                            <a href="#" class="clearfix">
+                                                <img src="dist/img/mr-robot-6.jpg" alt="">
+                                                <span class="seasons__list-item-title">Episode 6</span><br>
+                                                <span class="seasons__list-item-desc">59 min</span>
+                                            </a>
+                                        </li>
+                                        <li class="seasons__list-item">
+                                            <a href="#" class="clearfix">
+                                                <img src="dist/img/mr-robot-7.jpg" alt="">
+                                                <span class="seasons__list-item-title">Episode 7</span><br>
+                                                <span class="seasons__list-item-desc">59 min</span>
+                                            </a>
+                                        </li>
+                                        <li class="seasons__list-item">
+                                            <a href="#" class="clearfix">
+                                                <img src="dist/img/mr-robot-8.jpg" alt="">
+                                                <span class="seasons__list-item-title">Episode 8</span><br>
+                                                <span class="seasons__list-item-desc">59 min</span>
+                                            </a>
+                                        </li>
+                                        <li class="seasons__list-item">
+                                            <a href="#" class="clearfix">
+                                                <img src="dist/img/mr-robot-9.jpg" alt="">
+                                                <span class="seasons__list-item-title">Episode 9</span><br>
+                                                <span class="seasons__list-item-desc">59 min</span>
+                                            </a>
+                                        </li>
+                                        <li class="seasons__list-item">
+                                            <a href="#" class="clearfix">
+                                                <img src="dist/img/mr-robot-10.jpg" alt="">
+                                                <span class="seasons__list-item-title">Episode 10</span><br>
+                                                <span class="seasons__list-item-desc">59 min</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
         <!--seasons-list   end-->
 
-        <div class="container mt-4 movie-details__actions">
+
+        <div class="container mt-3 movie-details__actions">
             <div class="columns">
                 <div class="single-column">
                     <div class="columns">

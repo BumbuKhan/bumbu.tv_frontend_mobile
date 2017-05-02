@@ -22,7 +22,7 @@ $(document).ready(function () {
         );
 });
 
-// horizontal scroll
+// horizontal scroll for main page
 function initScrollers() {
     new IScroll('.js-movie-list__horizontal-scroller', {
         eventPassthrough: true,
@@ -46,6 +46,15 @@ function initScrollers() {
     });
 
     new IScroll('.js-ted-list__horizontal-scroller', {
+        eventPassthrough: true,
+        scrollX: true,
+        scrollY: false,
+        preventDefault: false
+    });
+}
+
+function initSeasonsScrollers() {
+    new IScroll('.js-seasons__horizontal-scroller', {
         eventPassthrough: true,
         scrollX: true,
         scrollY: false,

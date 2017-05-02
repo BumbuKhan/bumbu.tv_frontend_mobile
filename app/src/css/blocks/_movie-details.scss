@@ -46,6 +46,10 @@
       margin-bottom: 0;
       color: #878787;
     }
+
+    h2 {
+      line-height: 1.2;
+    }
   }
 }
 
@@ -77,16 +81,16 @@
   }
 }
 
-.movie-details__actions{
+.movie-details__actions {
   background-color: $color-light-grey;
 }
 
-.movie-details__actions{
+.movie-details__actions {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-.movie-details__actions button{
+.movie-details__actions button {
   border: none;
   outline: none;
   background-color: $color-light-grey;
@@ -96,7 +100,77 @@
   width: 100%;
   line-height: 2.5em;
 
-  i{
+  i {
     color: #7a7a7a;
   }
+}
+
+.seasons__horizontal-scroller {
+  height: 300px;
+}
+
+.seasons__scoller {
+  height: 300px;
+  width: 550px;
+}
+
+.seasons__list-col {
+  width: 250px;
+  //background-color: yellow;
+}
+
+.seasons__list-item {
+  float: none !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+
+  a {
+    display: block;
+    text-decoration: none;
+    position: relative;
+    height: 50px;
+
+    img {
+      display: inline-block;
+      float: left;
+      @include border-radius($poster-border-radius);
+      height: 50px;
+      width: 90px;
+    }
+
+    span{
+      display: inline-block;
+      float: left;
+      margin-left: 10px;
+    }
+
+    &:after{
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: -1px;
+      right: 0;
+      width: 150px;
+      height: 1px;
+      border-top: 1px #ececec solid;
+    }
+  }
+}
+
+.seasons__list-item-title{
+  color: #000;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.seasons__list-item-desc{
+  color: #666666;
+  font-size: 12px;
+}
+
+.seasons__scoller ul > li {
+  padding-top: 0;
+  padding-bottom: 0;
 }
