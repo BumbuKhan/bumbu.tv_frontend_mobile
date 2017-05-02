@@ -9,12 +9,12 @@
   }
 
   .css-truncate.css-truncate-target, .css-truncate .css-truncate-target {
-    max-width: $movies-item-width - (2 * $movie-list-item-x-axis-gutter);
+    max-width: $movies-item-width - ($movie-list-item-x-axis-gutter);
   }
 }
 
 .movie-list__item-desc {
-  text-align: center;
+  //text-align: center;
   margin-top: 5px;
 
   span {
@@ -54,25 +54,4 @@
 
 .movie__list-view-item-title {
   white-space: normal;
-}
-
-.movie__list-view-item-series {
-  a{
-    position: relative;
-
-    &:after{
-      content: '';
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 10px;
-      bottom: -10px;
-      background: url("../img/series-bg.png") no-repeat top center;
-      background-size: contain;
-    }
-  }
-
-  img {
-    box-shadow: none;
-  }
 }
