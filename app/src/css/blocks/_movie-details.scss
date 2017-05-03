@@ -154,7 +154,7 @@
       right: 0;
       width: 150px;
       height: 1px;
-      border-top: 1px #ececec solid;
+      border-top: 1px $color-light-grey-border solid;
     }
   }
 }
@@ -166,11 +166,57 @@
 }
 
 .seasons__list-item-desc{
-  color: #666666;
+  color: $color-middle-grey;
   font-size: 12px;
 }
 
 .seasons__scoller ul > li {
   padding-top: 0;
   padding-bottom: 0;
+}
+
+.seasons-window__item{
+  border-bottom: 1px $color-light-grey-border solid;
+  
+  a{
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+  }
+}
+
+.seasons-window__item-poster{
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  @include border-radius($poster-border-radius);
+}
+
+.seasons-window__item-title{
+  font-size: 16px;
+  display: block;
+  margin-top: 9px;
+  color: #000;
+}
+
+.seasons-window__item-desc{
+  font-size: 12px;
+  display: block;
+  font-weight: normal;
+  color: $color-middle-grey;
+}
+
+.seasons-window__item-current{
+  background-color: $color-light-grey;
+}
+
+.seasons-window__item-curent-icon{
+  display: inline-block;
+  position: absolute;
+  top: 25px;
+  right: 20px;
 }

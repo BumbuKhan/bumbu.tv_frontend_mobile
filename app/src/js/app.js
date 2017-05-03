@@ -4,22 +4,23 @@ $(document).ready(function () {
     $('#hamburger-menu').mmenu();
 
     // search-window
-    $('#search-window').mmenu({
+    $('#seasons-window').mmenu({
         extensions: ['border-none', 'shadow-page', 'theme-white', 'pagedim-black'],
         offCanvas: {
             zposition: 'front',
-            position: 'top'
+            position: 'bottom'
         },
-        navbar: false,
-        navbars: {
-            content: ['searchfield', 'close']
-        }
+        navbar: {
+            title: "Seasons"
+        },
+        navbars: [{
+            content: ["prev", "title", "close"],
+        }],
+        dividers: {
+            add: false,
+            fixed: true
+        },
     }, {})
-        .on('click', 'a[href^="#/"]', function () {
-                alert('Thank you for clicking, but that\'s a demo link.');
-                return false;
-            }
-        );
 });
 
 // horizontal scroll for main page
