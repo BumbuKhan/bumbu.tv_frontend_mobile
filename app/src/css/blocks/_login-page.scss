@@ -45,8 +45,7 @@ a.btn-connect-option {
   padding: 10px 10px 10px 50px;
   border-radius: 3px;
   text-decoration: none;
-  background-image: url('../img/btn-connect-option.png');
-  background-repeat: no-repeat;
+  position: relative;
 
   &.facebook {
     background-color: #3b5998;
@@ -55,6 +54,13 @@ a.btn-connect-option {
   &.google-plus {
     background-color: #dc4d28;
     background-position: 0 -37px;
+  }
+
+  .social-icons{
+    display: inline-block;
+    position: absolute;
+    left: 20px;
+    font-size: 20px;
   }
 }
 
