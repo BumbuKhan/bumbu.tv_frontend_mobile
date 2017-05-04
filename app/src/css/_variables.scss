@@ -47,10 +47,12 @@ $movie-list-margin-top: 10px;
 
 // posters
 $poster-border-radius: 3px;
-$poster-box-shadow: 0 2px 10px rgba(0, 0, 0, .3);
+//$poster-box-shadow: 0 2px 10px rgba(0, 0, 0, .3);
+$poster-box-shadow: none;
 
 // series posters
-$series-poster-box-shadow: 0 0 40px 1px rgba(0, 0, 0, .3);
+//$series-poster-box-shadow: 0 0 40px 1px rgba(0, 0, 0, .3);
+$series-poster-box-shadow: none;
 
 // view movie page
 $movie-details-blured-block-height: 270px;
