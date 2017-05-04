@@ -9,7 +9,7 @@
 
 .series-list__item a {
   display: block;
-  height: 150px;
+  height: $series-item-height - 5;
 
   p {
     text-align: center;
@@ -40,19 +40,19 @@
 }
 
 .series-list__item-poster-left {
-  left: 15px;
+  left: 10px;
 }
 
 .series-list__item .series-list__item-poster-middle {
   z-index: 3;
-  width: 95px !important;
-  left: 60px;
+  width: 105px !important;
+  left: 55px;
   top: 40px;
   @include box-shadow($series-poster-box-shadow);
 }
 
 .series-list__item-poster-right {
-  right: 15px;
+  right: 10px;
 }
 
 .series-list__horizontal-scroller {
