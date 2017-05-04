@@ -44,3 +44,21 @@
     height: $ted-item-height;
   }
 }
+
+
+
+.ted__list-view-item img{
+  @include border-radius($poster-border-radius);
+}
+
+.ted__list-item-title{
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+.ted__list-item-desc{
+  color: $color-middle-grey;
+  font-size: 11px;
+  margin-top: 5px;
+}
