@@ -24,28 +24,34 @@ $(document).ready(function () {
 });
 
 // horizontal scroll for main page
-function initScrollers() {
+function initMovieListScroller() {
     new IScroll('.js-movie-list__horizontal-scroller', {
         eventPassthrough: true,
         scrollX: true,
         scrollY: false,
         preventDefault: false
     });
+}
 
+function initSeriesListScroller() {
     new IScroll('.js-series-list__horizontal-scroller', {
         eventPassthrough: true,
         scrollX: true,
         scrollY: false,
         preventDefault: false
     });
+}
 
+function initCartoonsListScroller() {
     new IScroll('.js-cartoons-list__horizontal-scroller', {
         eventPassthrough: true,
         scrollX: true,
         scrollY: false,
         preventDefault: false
     });
+}
 
+function initTedListScroller() {
     new IScroll('.js-ted-list__horizontal-scroller', {
         eventPassthrough: true,
         scrollX: true,

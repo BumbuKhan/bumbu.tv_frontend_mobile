@@ -42,7 +42,7 @@
                         <div class="one-fourth column">
                             <!--header__search start-->
                             <div class="header__search text-right clearfix">
-                                <a href="search.html"><i class="fa fa-search text-white" aria-hidden="true"></i></a>
+                                <a href="search-with-no-query.html"><i class="fa fa-search text-white" aria-hidden="true"></i></a>
                             </div>
                             <!--header__search   end-->
                         </div>
@@ -59,13 +59,15 @@
             <form method="get" action="">
                 <div class="columns">
                     <div class="three-fourths column position-relative pr-0">
-                        <input class="form-control input-block search-form__query-input pl-5" type="text" placeholder="Movie's title">
-                        <a href="#" class="search-form__filter-btn search-form__filter-btn--active">
+                        <input class="form-control input-block search-form__query-input pl-5" type="text"
+                               placeholder="Movie's title">
+                        <a href="#" class="search-form__filter-btn">
                             <i class="fa fa-sliders" aria-hidden="true"></i>
                         </a>
                     </div>
                     <div class="one-fourth column pl-0">
-                        <button class="btn btn-block search-form__search-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+                        <button class="btn btn-block search-form__search-btn"><i class="fa fa-search"
+                                                                                 aria-hidden="true"></i></button>
                     </div>
                 </div>
             </form>
@@ -85,7 +87,10 @@
                                 <h3 class="text-gray-dark">Search</h3>
                             </div>
                             <div class="right">
-                                <small class="text-muted">found 23 item(s)</small>
+                                <small class="text-muted">
+                                    <a href="#" class="btn btn-outline btn-sm search-page__sort-btn">Last added <i
+                                            class="fa fa-arrow-down" aria-hidden="true"></i></a>
+                                </small>
                             </div>
                         </header>
                     </div>

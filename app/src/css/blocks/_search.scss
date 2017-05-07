@@ -11,8 +11,8 @@
   padding: 4px 10px;
   font-size: 19px;
   color: #999999;
-  
-  &.search-form__filter-btn--active{
+
+  &.search-form__filter-btn--active {
     color: #222222;
   }
 }
@@ -21,4 +21,40 @@
   border-left: none !important;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+}
+
+.search-page__sort-btn {
+  font-weight: normal !important;
+}
+
+.recently-searched__ul {
+  list-style-type: none;
+}
+
+.recently-searched__li {
+  margin-top: 4px;
+}
+
+.recently-searched__link {
+  display: block;
+  border-bottom: 1px $color-light-grey solid;
+  padding-top: 4px;
+}
+
+.recently-searched__title {
+  font-size: 14px;
+
+  &.css-truncate-target {
+    max-width: 70%;
+  }
+}
+
+.recently-searched__date {
+  color: $color-middle-grey;
+  font-size: 13px;
+  float: right;
+
+  &.css-truncate-target {
+    max-width: 30%;
+  }
 }
