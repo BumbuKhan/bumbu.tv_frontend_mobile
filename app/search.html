@@ -58,11 +58,14 @@
         <div class="container">
             <form method="get" action="">
                 <div class="columns">
-                    <div class="three-fourths column">
-                        <input class="form-control input-block" type="text" placeholder="Movie's title">
+                    <div class="three-fourths column position-relative pr-0">
+                        <input class="form-control input-block search-form__query-input pl-5" type="text" placeholder="Movie's title">
+                        <a href="#" class="search-form__filter-btn search-form__filter-btn--active">
+                            <i class="fa fa-sliders" aria-hidden="true"></i>
+                        </a>
                     </div>
                     <div class="one-fourth column pl-0">
-                        <button class="btn btn-block"><i class="fa fa-search" aria-hidden="true"></i></button>
+                        <button class="btn btn-block search-form__search-btn"><i class="fa fa-search" aria-hidden="true"></i></button>
                     </div>
                 </div>
             </form>

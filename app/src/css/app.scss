@@ -13,6 +13,7 @@
 @import "blocks/_search-window";
 @import "blocks/_login-page";
 @import "blocks/_or-divider";
+@import "blocks/_search";
 
 .outlined {
   outline: 1px #333 dotted;
@@ -36,3 +37,9 @@
 }
 
 // blocks: common styles   end
+
+
+// removing browsersync notification popup, remove this stuff on production mode
+#__bs_notify__{
+  display: none !important;
+}

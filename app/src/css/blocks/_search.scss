@@ -1,0 +1,24 @@
+.search-form__query-input {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.search-form__filter-btn {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  padding: 4px 10px;
+  font-size: 19px;
+  color: #999999;
+  
+  &.search-form__filter-btn--active{
+    color: #222222;
+  }
+}
+
+.search-form__search-btn {
+  border-left: none !important;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
